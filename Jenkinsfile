@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    environment {
+        DB_PASSWORD = credentials('DATABASE_PASS')
+    }
         stages{
             ////////////////////////////////////////////////////
             stage('Download Docker') {
