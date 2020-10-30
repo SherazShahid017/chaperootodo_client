@@ -6,7 +6,7 @@ pipeline{
                 steps {
                     sh 'sudo apt-get update'
                     sh 'curl https://get.docker.com | sudo bash'
-                    sh 'docker --version
+                    sh 'docker --version'
                 }
             }
             ///////////////////////////////////////////////////
